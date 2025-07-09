@@ -3,43 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>iPhone Repair 4 Less – Visalia’s Most Wanted Fixer</title>
+  <title>iPhone Repair 4 Less – Visalia’s Best Repair Tech HANDS DOWN</title>
   <style>
     body {
       margin: 0;
       font-family: 'Arial', sans-serif;
-      background-color: #0e0e0e;
-      color: #f2f2f2;
+      background-color: #ffffff;
+      color: #111111;
+    }
+
+    nav {
+      background-color: #ffffff;
+      text-align: center;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    nav a {
+      color: #cc0000;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
     }
 
     header {
-      background: #000;
+      background: #f7f7f7;
       padding: 40px 20px;
       text-align: center;
-      animation: fadeIn 1s ease-in-out;
+      border-bottom: 1px solid #eee;
     }
 
     header h1 {
       font-size: 2.8rem;
       margin: 0;
+      color: #cc0000;
     }
 
     header p {
       font-style: italic;
       font-size: 1.2rem;
-      color: #888;
+      color: #333;
     }
 
     .hero {
-      background: #121212;
       padding: 60px 20px;
       text-align: center;
-      animation: slideDown 1s ease-in-out;
     }
 
     .hero h2 {
       font-size: 2rem;
       margin-bottom: 20px;
+      color: #cc0000;
     }
 
     .hero p {
@@ -51,14 +65,21 @@
 
     .hero .button {
       margin-top: 25px;
-      background-color: #ff4d4d;
-      color: #000;
+      background-color: #cc0000;
+      color: #ffffff;
       padding: 12px 24px;
       text-decoration: none;
       font-weight: bold;
       border-radius: 5px;
       display: inline-block;
-      animation: fadeIn 2s ease-in-out;
+    }
+
+    .gallery img {
+      width: 100%;
+      max-width: 200px;
+      border-radius: 8px;
+      margin: 10px;
+      border: 2px solid #eee;
     }
 
     .services {
@@ -66,62 +87,168 @@
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
       padding: 40px 20px;
-      background: #1a1a1a;
+      background: #f9f9f9;
     }
 
     .card {
-      background: #161616;
+      background: #ffffff;
       padding: 20px;
       border-radius: 10px;
-      border: 1px solid #333;
-      transition: transform 0.3s ease;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     }
 
-    .card:hover {
-      transform: translateY(-5px);
-      background: #222;
-    }
-
-    .gallery img {
-      width: 100%;
-      max-width: 200px;
-      border-radius: 10px;
-      margin: 10px;
-      transition: transform 0.3s ease;
-    }
-
-    .gallery img:hover {
-      transform: scale(1.05);
-    }
-
-    .tip-section {
-      padding: 30px 20px;
-      background: #111;
-      animation: fadeIn 2s ease-in-out;
-    }
-
-    .tip-section h2 {
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-    }
-
-    .tip-section p, .tip-section ol {
-      font-size: 1rem;
+    details {
       max-width: 600px;
-      margin: 10px auto;
-      line-height: 1.6;
+      margin: 20px auto;
+      background: #fff5f5;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #cc0000;
     }
 
-    .contact, .form-section, footer {
+    summary {
+      font-size: 1.2rem;
+      font-weight: bold;
+      cursor: pointer;
+      color: #cc0000;
+    }
+
+    .form-section {
+      padding: 40px 20px;
+      background-color: #f7f7f7;
+      text-align: center;
+    }
+
+    .form-section form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .form-section input, .form-section textarea {
+      margin: 10px 0;
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+
+    .form-section button {
+      background-color: #cc0000;
+      color: #fff;
+      padding: 12px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .contact, footer {
       text-align: center;
       padding: 30px 20px;
     }
 
     footer {
       font-size: 0.9rem;
-      background: #000;
+      background: #fff;
       color: #777;
+      border-top: 1px solid #ccc;
     }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#hero">Home</a>
+    <a href="#services">Services</a>
+    <a href="#water">Water Tips</a>
+    <a href="#reset">Hard Reset</a>
+    <a href="#form">Get Estimate</a>
+    <a href="#contact">Contact</a>
+  </nav>
 
-    @keyframes fadeIn {
-      from { opacity
+  <header id="hero">
+    <h1>iPhone Repair 4 Less</h1>
+    <p>Visalia’s Most Wanted Fixer</p>
+  </header>
+
+  <section class="hero">
+    <h2>Cracked screen? Took a dip in the toilet? Black screen of death?</h2>
+    <p>Stop crying. We’ll pull up and fix it on the spot. No storefront. No BS. Just The iPhone Guy and a toolbox.</p>
+    <a href="sms:5594715837" class="button">Text The iPhone Guy</a>
+  </section>
+
+  <section id="services" class="services">
+    <div class="gallery">
+      <img src="/mnt/data/OIP-1044257865.OxSaVjV4A7qKWTPf40J5NwHaJZ.jpeg" alt="Cracked screen">
+      <img src="/mnt/data/OIP-2343799901.dql6VO9ZVnWZDNSLPYEaiAHaHa.jpeg" alt="Battery replacement">
+      <img src="/mnt/data/OIP-812403699.HBPFth3krqvL_9wV5wVw_wHaEK.jpeg" alt="Heat gun repair">
+      <img src="/mnt/data/OIP-1420524371.35qfepacoP_vPfI0OJaUOwHaEK.jpeg" alt="Cracked camera lens">
+    </div>
+    <div class="card">
+      <h3>SCREEN BUSTED AF</h3>
+      <p>We’ve seen worse. You’ll be scrolling in 20 minutes or less.</p>
+    </div>
+    <div class="card">
+      <h3>BATTERY COOKED?</h3>
+      <p>You shouldn’t be on 12% by 10 AM. Let’s swap it out.</p>
+    </div>
+    <div class="card">
+      <h3>WATER DAMAGE</h3>
+      <p>Dropped it in the pool, tub, or worse? We don't judge — we fix.</p>
+    </div>
+    <div class="card">
+      <h3>WE COME TO YOU</h3>
+      <p>Home, work, Target parking lot — we pull up strapped with tools.</p>
+    </div>
+  </section>
+
+  <section id="water">
+    <details>
+      <summary>💧 What do I do if my iPhone gets wet?</summary>
+      <p><strong>1.</strong> CALL The iPhone Guy IMMEDIATELY – 559-471-5837 🆘</p>
+      <p><strong>2.</strong> DO NOT PLUG IT IN. Turn it off. Power kills wet circuits.</p>
+      <p><strong>3.</strong> Dry it, then drop it in a bag of rice or uncooked Top Ramen (yes, seriously).</p>
+      <p><strong>4.</strong> Let it chill 24–48 hrs, then call us for the real fix.</p>
+    </details>
+  </section>
+
+  <section id="reset">
+    <details>
+      <summary>📴 iPhone blacked out but still rings or glitching?</summary>
+      <p>It's not dead — it's just stuck. Try this HARD RESET:</p>
+      <ol>
+        <li>Tap Volume Up (quickly)</li>
+        <li>Tap Volume Down (quickly)</li>
+        <li>Hold down the Power button and KEEP HOLDING</li>
+        <li>Wait for that Apple logo like your life depends on it</li>
+      </ol>
+      <p>If it keeps doing this, hit up The iPhone Guy. We’ll fix the root issue. 🔧</p>
+    </details>
+  </section>
+
+  <section id="form" class="form-section">
+    <h2>Tell us what’s wrong with your phone 👇</h2>
+    <p>Drop your info and symptoms below — we’ll get back with an estimate fast.</p>
+    <form action="mailto:5594715837@vtext.com" method="POST" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="tel" name="phone" placeholder="Your Phone Number" required>
+      <textarea name="symptoms" rows="5" placeholder="Tell us what’s going on (screen cracked, not charging, dropped it, etc.)" required></textarea>
+      <button type="submit">Send to The iPhone Guy</button>
+    </form>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>📍 Serving Visalia city limits only</h2>
+    <p>📱 559-471-5837</p>
+    <p>📩 support@iphonerepair4less.com</p>
+    <p>🕘 Open 9AM–9PM by appointment only</p>
+  </section>
+
+  <footer>
+    &copy; 2025 iPhone Repair 4 Less | Real repairs. Real fast. Real affordable.
+  </footer>
+</body>
+</html>
